@@ -54,7 +54,7 @@ test:
 
 ## pushes to kubernetes cluster
 k8s-apply:
-	sed 's/1.0/$(VERSION)/' k8s-tiny-tools-with-swaks.yaml | kubectl apply -f -
+	sed 's/3.12.001/$(VERSION)/' k8s-tiny-tools-with-swaks.yaml | kubectl apply -f -
 	@echo ""
 	@echo "tiny-tools-with-swaks pod created in default ns has swaks utility"
 

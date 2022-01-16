@@ -33,7 +33,7 @@ spec:
             topologyKey: "kubernetes.io/hostname"
       containers:
       - name: tiny-tools-with-swaks
-        image: fabianlee/tiny-tools-with-swaks:1.0
+        image: fabianlee/tiny-tools-with-swaks:3.12.001
         args:
         - /bin/sh
         - -c
