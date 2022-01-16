@@ -1,6 +1,6 @@
 OWNER := fabianlee
 PROJECT := tiny-tools-with-swaks
-VERSION := 3.12
+VERSION := 3.12.001
 OPV := $(OWNER)/$(PROJECT):$(VERSION)
 
 # you may need to change to "sudo docker" if not a member of 'docker' group
@@ -54,7 +54,7 @@ test:
 
 ## pushes to kubernetes cluster
 k8s-apply:
-	cat k8s-tiny-tools-with-swaks.yaml | kubectl apply -f -
+	sed 's/1.0/$(VERSION)/' k8s-tiny-tools-with-swaks.yaml | kubectl apply -f -
 	@echo ""
 	@echo "tiny-tools-with-swaks pod created in default ns has swaks utility"
 
