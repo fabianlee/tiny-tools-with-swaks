@@ -1,3 +1,4 @@
+# https://raw.githubusercontent.com/fabianlee/tiny-tools-with-swaks/main/k8s-tiny-tools-with-swaks.yaml
 ---
 apiVersion: apps/v1
 kind: Deployment
